@@ -275,7 +275,7 @@ input[type=checkbox]:checked{
 input[type=checkbox]:checked:after{
     color : #fff;
     content : "\2714";
-    left : -2px;
+    left : -4px;
     position : relative;
     top : -7px;
 }
