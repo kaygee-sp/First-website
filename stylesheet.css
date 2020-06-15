@@ -420,6 +420,13 @@ hr{
     width : 10em;
 }
 
+#button1 input{
+    height: 3em;
+    width: 10em;
+    margin-left: 20px;
+    
+}
+
 /*footer*/
 .footer{
     background-color : #333;
