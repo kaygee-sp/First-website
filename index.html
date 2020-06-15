@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <title>K's Barbershop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+</head>
+
+<body>
+    <a id="top"></a>
+    <header class="logo">
+        <h3><a href="index.html"><img src="logo/logo.png" alt="logo">K's barbershop</a></h3>
+    </header>
+    <nav class="navbar">
+        <span id="current">Home</span>
+        <a href="#createEvent">Create a promotion</a>
+        <a href="#table">Sign-Up</a>
+        <a href="studentdisciplinary/tableofcontent.html">SDC</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+    <div class="wrapper">
+            <article id="gallery">
+            	<h2>gallery</h2>
+                <figure><img src="images/image1.jpg" alt="haircut"></figure>
+                <figure><img src="images/image2.jpg" alt="haircut"></figure>
+                <figure><img src="images/image3.jpg" alt="haircut"></figure>
+                <figure><img src="images/image4.jpg" alt="haircut"></figure>
+                <figure><img src="images/image6.jpg" alt="haircut"></figure>
+                <figure><img src="images/image7.jpg" alt="haircut"></figure>
+            </article>   
+        <aside class="sidebar">
+            <h1 id="about">About Us</h1>
+            
+            <p>The barbershop was established in 2014. It all started as a hobby and I used to cut my friends on a regular basis and as time went by a lot of people started to notice those hairstyles my friends had and were asked about them.</p>
+            <p>So a thought came into my mind that I should open a barbershop and that was in 2014, now we are here.</p>
+            <p>We are currently located at <a href="sjkab">456 6th Ave, Rustenburg, North West 0299</a>.</p>
+            <h1 id="contact">Contact Us</h1>
+            <p><span>Email : </span>kayg@gmail.com</p>
+            <p><span>Cell :</span> 0814478759 / 0768898767</p>
+            <p>
+                <a href="www.facebook.com"><img src="socialmedia/facebook.png" id="facebook" alt="facebook logo"></a>
+                <a href="www.twitter.com"><img src="socialmedia/twitter.png" id="twitter" alt="twitter logo"></a>
+                <a href="www.instagram.com"><img src="socialmedia/instagram.png" id="instagram" alt="instagram logo"></a>
+                <a href="www.whatsapp.com"><img src="socialmedia/whatsapp.png" id="whatsapp" alt="whatsapp logo"></a>
+            </p>
+            
+        </aside>
+        <section class="main">
+            <h1 id="services">Services</h1>
+            <div>Some of the services that we offer include the following</div>
+            <ul>
+                <li>Hair cutting</li>
+                <li>Hair washing</li>
+                <li>Everything that has to do with beard</li>
+                <li>Trimming</li>
+                <li>Hair growth products</li>
+                <li>Snacks and beverages while waiting</li>
+            </ul>
+            <div>If you would like to attend one of our promotions please follow the <a href="#table">link</a> on the calendar.</div>
+            <h1 id="tHours">Trading Hours</h1>
+            <p><span>Mon - Fri :</span> 09: 00 - 17:00</p>
+            <p><span>Sat - Sun :</span> 10:00 - 15:00</p>
+            <p><span>Holidays :</span> 11:00 - 13:00</p>
+        </section> 
+            <table id="table">
+                <caption>JUNE 2020</caption>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>1 <br><a href="attendanceform.html">Haircut</a></td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15 <br><a href="attendanceform.html">Nails</a></td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26 <br><a href="attendanceform.html">Spa</a></td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <form action="promotionform.html">
+            	<div id="button1">
+               <input type="submit" id="createEvent" value="Create Promotion">
+            </div>
+            
+            <div id="toTop"><a href="#top">&#94;</a></div>
+            </form>
+    </div>
+       
+    <footer class="footer">
+        Copyright &copy; 2020 &bull; K's Barbershop &bull; Web Development by Kagiso S Phasha
+        <p>All Rights Reserved</p>
+    </footer>
+    <script>
+    	"use strict";
+    	var formV = true;
+    	function handleSubmit(evt){
+    		if(evt.preventDefault){
+    			evt.preventDefault();
+    		}else{
+    			evt.returnValue = false;
+    		}
+    		formV = true;
+    		if((window.prompt("Password") === "1234") && formV === true){
+    			document.getElementsByTagName("form")[0].submit();
+    		}
+    	}
+
+    	function createEventL(){
+    		var button = document.getElementsByTagName("form")[0];
+    		if(button.addEventListener){
+    			button.addEventListener("submit", handleSubmit, false);
+    		}else if(button.attachEvent){
+    			button.attachEvent("onsubmit", handleSubmit);
+    		}
+    	}
+
+    	if(window.addEventListener){
+    		window.addEventListener("load", createEventL, false);
+    	}else if(window.attachEvent){
+    		window.attachEvent("onload", createEventL);
+    	}
+    </script>
+</body>
+</html>

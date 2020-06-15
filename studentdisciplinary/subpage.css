@@ -1,0 +1,185 @@
+body{
+	font-family: sans-serif, helvetica, georgia;
+	margin: auto;
+}
+
+#wrapper{
+	width: 95%;
+	margin: auto;
+	background: linear-gradient(to right, grey 60%, black 110%);
+	transition: all 1s ease-in-out;
+	opacity: 90%;
+}
+
+#toc li:hover{
+	background: linear-gradient(to left, grey 0%, black 100%);
+	opacity: 100%;
+	transition: all 1s ease-in-out;
+}
+
+#toc li a{
+	transition: all 0s ease-in-out;
+	color: blue;
+}
+
+#toc li a:hover{
+	color: purple;
+	transition: all 1s ease-in-out;
+}
+
+#logo{
+	width: 95%;
+	margin: auto;
+	margin-bottom: 2em;
+}
+
+#navbar{
+	display: inline;
+	width: 94%;
+	margin: 0.5em 37%;
+}
+
+#navbar a, #current{
+	text-align: center;
+	border: solid thin black;
+	padding: 0.6em;
+	text-decoration: none;
+	border-radius: 5px;
+	color: black;
+}
+
+#current{
+	font-weight: bold;
+}
+
+#navbar a{
+	background: linear-gradient(to right, grey 10%, black 100%);
+	transition: all 1s ease-in-out;
+}
+
+#navbar a:hover{
+	background: linear-gradient(to left, grey 10%, black 100%);
+	font-weight: bold;
+	color: white;
+	transition: all 1s ease-in-out;
+}
+
+#main h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: georgia, helvetica, sans-serif;
+	font-size: 2em;
+}
+
+ol{
+	counter-reset: item;
+	padding-left: 30px;
+	list-style: decimal;
+}
+
+ol ol li{
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#main ul{
+	list-style: square;
+}
+
+#main ul li{
+	padding: 5px;
+}
+
+#main ul li a{
+	text-decoration: none;
+}
+
+#main .link{
+	color: blue;
+}
+
+#main .link:hover{
+	color: purple;
+	text-decoration: underline;
+}
+
+#page3{
+	list-style: square;
+}
+
+#page3 ul{
+	list-style: disclosure-closed;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+table{
+	border-collapse: collapse;
+	margin-top: 45px;
+	background-color: #ccdae6;
+	width: 100%;
+}
+
+caption{
+	font-weight: bold;
+	padding-bottom: 20px;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: georgia;
+}
+
+table ol{
+	list-style: lower-roman;
+}
+
+th,td{
+	border: solid thin black;
+	padding: 10px;
+	text-align: left;
+}
+
+th{
+	background-color: darkkhaki; 
+}
+
+tbody tr:nth-child(odd){
+	background-color: #eaead5;
+}
+
+#next{
+	float: right;
+	margin: 10px 0px;
+	border: solid thin black;
+	background-color: #ccc;
+	width: 1.5em;
+	height: 2em;
+}
+
+#prev{
+	float: left;
+	margin: 10px 0px;
+	border: solid thin black;
+	background-color: #ccc;
+	width: 1.5em;
+	height: 2em;
+}
+
+#next a, #prev a{
+	text-decoration: none;
+	position: relative;
+	left: 3px;
+	font-size: 30px;
+}
+
+#footer{
+	border: solid thin black;
+	padding: 5px;
+	text-align: center;
+	background-color: #333;
+	margin: auto;
+	clear: both;
+	width: 94%;
+}
